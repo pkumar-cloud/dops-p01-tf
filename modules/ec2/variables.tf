@@ -17,7 +17,7 @@ variable "security_groups" {
   default = ["valaxy-sg-rtp"]
 }
 
-variable "vpc_security_group_ids" {
+variable "vpc_security_group_ids" {  // Use this or above one.
   default = ["valaxy-sg-rtp"]
 }
 
