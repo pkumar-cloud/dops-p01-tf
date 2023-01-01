@@ -1,5 +1,5 @@
 variable "secgroupname" {
-  default = "valaxy-sg-rtp"
+  default = "pkdev-sg-rtp"
 }
 
 variable "vpc_id" {

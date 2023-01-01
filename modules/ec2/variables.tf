@@ -1,5 +1,6 @@
 variable "instance_type" {
-  default = "t2.micro"
+  //default = "t2.micro"
+  default = "t2.medium"
 }
 
 variable "associate_ip" {
@@ -7,18 +8,18 @@ variable "associate_ip" {
 }
 
 variable "ami" {
-  default =  "ami-08c40ec9ead489470"
+  default =  "ami-0530ca8899fac469f"  // Ubuntu 20.04
 }
 variable "key_name" {
-   default = "rtp-devops" // Key or PEM file name
+   default = "~/pkdev" // Key or PEM file name
 }
 
 variable "security_groups" {
-  default = ["valaxy-sg-rtp"]
+  default = ["pkdev-sg-rtp"]
 }
 
 variable "vpc_security_group_ids" {  // Use this or above one.
-  default = ["valaxy-sg-rtp"]
+  default = ["pkdev-sg-rtp"]
 }
 
 variable "subnet_id" {
