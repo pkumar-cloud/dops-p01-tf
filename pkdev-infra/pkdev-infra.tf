@@ -42,12 +42,12 @@ module "k8scluster" {
 
 output "k8s_master_public_ip" {
    description = "The Public IP assigned to the K8s master instance"
-   value = "${module.k8scluster.master_public_ip}"
+   value = "${module.k8scluster.k8smaster_public_ip}"
 }
 
 output "k8s_slave_public_ip" {
    description = "The Public IP assigned to the k8s slave instance"
-   value = "${module.k8scluster.slave_public_ip}"
+   value = "${module.k8scluster.k8sslave_public_ip}"
 }
 
 output "security_group_id" {
