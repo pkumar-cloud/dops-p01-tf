@@ -11,7 +11,7 @@ variable "ami" {
   default =  "ami-0530ca8899fac469f"  // Ubuntu 20.04
 }
 variable "key_name" {
-   default = "/home/ec2-user/pkdev.pem" // Key or PEM file name
+   default = "pkdev" // Key or PEM file name
 }
 
 variable "security_groups" {

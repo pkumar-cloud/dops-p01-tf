@@ -5,7 +5,7 @@ resource "aws_instance" "myec2" {
   key_name = var.key_name
   vpc_security_group_ids = var.vpc_security_group_ids
   subnet_id = var.subnet_id
-  for_each = toset(["master", "slave"])
+  for_each = toset(["master", "slave", "k8smaster", "k8sworker"])
   tags = {
     Name = "${each.key}"
   }
